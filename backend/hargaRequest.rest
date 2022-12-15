@@ -1,0 +1,24 @@
+//Get All Data Harga
+GET http://localhost:5000/harga
+
+### Get All Data Harga
+GET http://localhost:5000/harga/9e0b7a86-7943-4b9a-bfbf-488734d4ad7f
+
+### created harga
+POST http://localhost:5000/harga
+Content-Type: application/json
+
+{
+    "harga_per_kg" : 20000
+}
+
+### updated harga
+PATCH http://localhost:5000/harga/dbbfb8f3-1b5c-4fde-8f3f-b9dd1ec9dd94
+Content-Type: application/json
+
+{
+    "harga_per_kg" : 70000
+}
+
+### delete harga
+DELETE http://localhost:5000/harga/dbbfb8f3-1b5c-4fde-8f3f-b9dd1ec9dd94

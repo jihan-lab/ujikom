@@ -1,0 +1,29 @@
+//Get All Data Pelanggan
+GET http://localhost:5000/pelanggan
+
+### Get All Data pelanggan
+GET http://localhost:5000/pelanggan/95c2eeee-8264-475b-91ff-e11053d0a066
+
+### created pelanggan
+POST http://localhost:5000/pelanggan
+Content-Type: application/json
+
+{
+    "pelanggan_name": "Toko cantik",
+    "pelanggan_hp": "0897",
+    "pelanggan_alamat": "Cibogo"
+}
+
+### updated pelanggan
+PATCH http://localhost:5000/pelanggan/95c2eeee-8264-475b-91ff-e11053d0a066
+Content-Type: application/json
+
+{
+    "pelanggan_name": "Toko Updated",
+    "pelanggan_hp": "0897 updated",
+    "pelanggan_alamat": "Cibogo update"
+}
+
+
+### delete pelanggan
+DELETE http://localhost:5000/pelanggan/95c2eeee-8264-475b-91ff-e11053d0a066

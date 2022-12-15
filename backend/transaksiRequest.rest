@@ -1,0 +1,35 @@
+//Get All Data transaksi
+GET http://localhost:5000/transaksi
+
+### Get All Data transaksi
+GET http://localhost:5000/transaksi/f9c59bc2-dcef-4404-82c0-5bd71b49d76c
+
+### created transaksi
+POST http://localhost:5000/transaksi
+Content-Type: application/json
+
+{
+    "transaksi_berat": 20,
+    "transaksi_tgl_selesai": "2022-12-08",
+    "hargaId": 1,
+    "transaksi_harga": 1,
+    "pelangganId": 1,
+    "transaksi_pelanggan": 1
+}
+
+### updated transaksi
+PATCH http://localhost:5000/transaksi/f9c59bc2-dcef-4404-82c0-5bd71b49d76c
+Content-Type: application/json
+
+
+{
+    "transaksi_berat": 50,
+    "transaksi_tgl_selesai": "2022-12-08",
+    "hargaId": 1,
+    "transaksi_harga": 1,
+    "pelangganId": 1,
+    "transaksi_pelanggan": 1
+}
+
+### delete transaksi
+DELETE http://localhost:5000/transaksi/151d45e5-cc98-4129-97c1-60048c9a1db3

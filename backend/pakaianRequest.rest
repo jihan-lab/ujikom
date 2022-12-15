@@ -1,0 +1,30 @@
+//Get All Data pakaian
+GET http://localhost:5000/pakaian
+
+### Get All Data pakaian
+GET http://localhost:5000/pakaian/ae07eb28-4431-4dde-b13e-5064d7888cda
+
+### created pakaian
+POST http://localhost:5000/pakaian
+Content-Type: application/json
+
+{
+      "pakaian_transaksi": 1,
+      "pakaian_jenis": "Kebaya",
+      "pakaian_jumlah": 5,
+      "transaksiId": 1
+}
+
+### updated pakaian
+PATCH http://localhost:5000/pakaian/0811368a-3615-470c-bf89-0c139d88c69b
+Content-Type: application/json
+
+{
+      "pakaian_transaksi": 1,
+      "pakaian_jenis": "Kebaya",
+      "pakaian_jumlah": 3,
+      "transaksiId": 1
+}
+
+### delete pakaian
+DELETE http://localhost:5000/pakaian/ae07eb28-4431-4dde-b13e-5064d7888cda
